@@ -1,7 +1,7 @@
 import { Redis } from "@upstash/redis";
 
 export const redis = new Redis({
-  url: "https://eu2-exact-dory-31793.upstash.io",
+  url: process.env.REDIS_URL!,
   token: process.env.REDIS_KEY!,
 });
 
